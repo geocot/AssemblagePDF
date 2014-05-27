@@ -3,12 +3,15 @@
 # Name:        AssemblePDF
 # Purpose:     Permets d'assembler plusieurs fichiers PDF ensemble.
 #
-# Author:      Martin Couture
+# Author:      Martin Couture publiccouture@icloud.co*
+#              Remplacer * du courriel par m
 #
 # Created:     24/04/2014
 # Copyright:   (c) mcouture 2014
 # Licence:     À utiliser à vos propres risques.
+# Infos Suppl: Vous devez installer la librairie PyPDF2 pour pouvoir l'utiliser.
 #-------------------------------------------------------------------------------
+
 
 #Import des modules
 import os, string, sys
