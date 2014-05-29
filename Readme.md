@@ -1,1 +1,1 @@
-[code]Titre de mon programme======[/code] 
+Permet de faire l'assemblage de fichier PDF avec Python.
