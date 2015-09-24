@@ -12,13 +12,12 @@
 # Infos Suppl: Vous devez installer la librairie PyPDF2 pour pouvoir l'utiliser.
 #-------------------------------------------------------------------------------
 
-
 #Import des modules
 import os, string, sys
 from PyPDF2 import PdfFileMerger, PdfFileReader
 
 #Répertoire où se trouve les fichiers PDF.
-repertoire =sys.argv[1]
+repertoire = sys.argv[1]
 listeFichiersPDF = os.listdir(repertoire) #Liste des fichiers
 
 
