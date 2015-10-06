@@ -3,13 +3,14 @@
 # Name:        AssemblePDF
 # Purpose:     Permets d'assembler plusieurs fichiers PDF ensemble.
 #
-# Author:      Martin Couture publiccouture@icloud.co*
-#              Remplacer * du courriel par m
+# Author:      Martin Couture *ubliccouture@icloud.com
+#              Remplacer * du courriel par p
 #
 # Created:     24/04/2014
 # Copyright:   (c) mcouture 2014
 # Licence:     À utiliser à vos propres risques.
 # Infos Suppl: Vous devez installer la librairie PyPDF2 pour pouvoir l'utiliser.
+#              https://pypi.python.org/pypi/PyPDF2/1.15
 #-------------------------------------------------------------------------------
 
 #Import des modules
@@ -27,7 +28,9 @@ merger = PdfFileMerger()
 
 for fichier in listeFichiersPDF:
     if fichier.count(".") >0: #S'il y a des fichiers PDF dans le répertoire.
-        if fichier.split(".")[1] =="pdf":
+        nbElementListe = fichier.split(".")
+
+        if nbElementListe[len(nbElementListe)-1] =="pdf":
             print "Assemblage : " + fichier
             filename = repertoire+"\\"+fichier
             merger.append(PdfFileReader(file(filename, 'rb'))) #Assemblage du PDF
